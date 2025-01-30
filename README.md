@@ -91,3 +91,29 @@ to a collison based on an object's properties (costume).
 
 
 
+## Minecrab (minecrab.sb3)
+
+This is an ongoing development project and, to be honest, I'm not sure exactly what
+form it will take. Right now it's an underwater adventure featuring a crab (the
+player), a fish which drops useful items, and a shark which drops bombs.
+
+The crab runs around on the sandy bottom and can dig down into the blocks of sand
+and rock. The fish drops items such as rocks. Meanwhile the shark occasionally
+passes overhead and drops bombs which destroy blocks the bombs hit.
+
+The crab can be controlled used the arrow keys Left and Right to run, Up to jump. The crab
+can also be controlled using the A and D keys to move left and right and the W key to jump.
+
+To dig, the crab moves to a block of dirt and the user clicks (with the mouse) on the block
+they want removed.
+
+That's all I've got so far. I'm thinking, over time, of adding a health and scoring system
+where bombs harm the crab, food restores the crab's health, and points are awarded for
+surviving longer periods of time.
+
+I'm also considering some limitations on which types of dirt the crab can dig through until
+they gather certain items or level up, but that's to be determined later. This game is
+a work in progress and a literal sandbox where I'm exploring what the Scratch environment can
+do while also making an underwater, crab-themed, Minecraft-style adventure.
+
+
