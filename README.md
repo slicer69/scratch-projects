@@ -94,22 +94,39 @@ to a collison based on an object's properties (costume).
 ## Minecrab (minecrab.sb3)
 
 This is an underwater adventure featuring a crab (the 
-player), a fish which drops useful items, and a shark which drops bombs.
+player), a fish which drops rocks, and a shark which drops bombs.
 
 The crab runs around on the sandy bottom and can dig down into the blocks of sand, mud, 
-and rock. The fish drops items such as rocks (which turn into blocks of dirt). 
+and rock. The fish drops rocks (which turn into new blocks of dirt).
+ 
 Meanwhile the shark occasionally passes overhead and drops bombs which destroy blocks 
-the bombs hit.
+the bombs hit. When the bombs explode, the crab can be injured if it is too close.
 
-The crab can be controlled used the arrow keys Left and Right to run, Up to jump. The crab
-can also be controlled using the A and D keys to move left and right and the W key to jump.
+The crab can be controlled using the arrow keys Left and Right to run, Up to jump, and Down
+to stop. The crab can also be controlled using the A and D keys to move left and right. 
+The W key jumps and the S key stops the crab.
 
 To dig, the crab moves to a block of dirt and the user clicks (with the mouse) on the block
 they want removed.
 
-That's all I've got so far. I'm thinking, over time, of adding a health and scoring system
-where bombs harm the crab, food restores the crab's health, and points are awarded for
-surviving longer periods of time.
+The crab has health points (represented by hearts in the upper-left corner) which are
+reduced when the crab is hit by an explosion. When the hearts are reduced to zero, the
+game is over.
 
-This game is a work in progress and a literal sandbox where I'm exploring what the Scratch environment can do while also making an underwater, crab-themed, Minecraft-style adventure.
+There are no points, but the general idea of the game is to survive as long as possible. The
+player may also wish to amuse themselves by digging in certain patterns, dodging the bombs,
+or designing their own "ideal crab home". It's a literal sandbox game.
+
+This game was a way to explore a number of concepts and glue them together. There is
+keyboard-driven movement for the crab and random movement for the fish. In fact, a lot
+of this game is random - the appearances of the shark, where new rocks are dropped, and when
+the fish and shark say something.
+
+There is also object touching detection, mostly with things running into blocks (like the
+crab, bombs, and rocks). Plus we need to test distance between the crab and fish as well
+as see how close the crab is to blocks of dirt
+
+Another recurring feature in the code are signals, which tell us when one character has
+initiated or completed an actiion. Falling bombs, explosions, and the crab being hit
+are trigger signals which felt cleaner than using global variables to pass information.
 
