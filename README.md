@@ -1,5 +1,7 @@
 # Beginner Scratch Projects
 
+## This repository has been migrated to https://codeberg.org/thejessesmith/scratch-projects
+
 This repository contains a collection of small Scratch projects and games.
 
 I recently took on learning how to use Scratch (specifically Scratch 3) in order
